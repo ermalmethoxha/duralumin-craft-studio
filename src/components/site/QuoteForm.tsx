@@ -13,6 +13,7 @@ export function QuoteForm({ lang }: { lang: Lang }) {
       onSubmit={async (e) => {
         e.preventDefault();
         const form = e.currentTarget;
+        setSent(false);
         setSubmitting(true);
         setError(false);
         try {

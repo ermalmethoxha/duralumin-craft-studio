@@ -155,7 +155,7 @@ export const content = {
       label: "Eksperiencë ndërkombëtare",
       title: "Punime në të gjithë Europën",
       highlight:
-        "Punojm�� ndërkombëtarisht, me projekte të realizuara në Francë, Gjermani, Holandë, Belgjikë dhe Itali, dhe jemi të gatshëm për punime në të gjithë Europën.",
+        "Punojmë ndërkombëtarisht, me projekte të realizuara në Francë, Gjermani, Holandë, Belgjikë dhe Itali, dhe jemi të gatshëm për punime në të gjithë Europën.",
       body: "Eksperienca jonë shkon përtej kufijve. Kemi realizuar punime për ndërtesa, vila dhe komplekse banimi, duke sjellë cilësi, përpikëri dhe standarde europiane në çdo projekt.",
       countriesLabel: "Projekte të realizuara në",
       countries: ["Francë", "Gjermani", "Holandë", "Belgjikë", "Itali"],

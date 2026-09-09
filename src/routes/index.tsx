@@ -477,19 +477,16 @@ function PillarsDiagram({ lang }: { lang: Lang }) {
   const [active, setActive] = useState(0);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const startTimer = (from: number) => {
+  useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
     const reduced =
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) return;
-    timerRef.current = setTimeout(() => {
-      setActive((prev) => (prev + 1) % items.length);
-    }, 2500);
-  };
-
-  useEffect(() => {
-    startTimer(active);
+    if (!reduced) {
+      timerRef.current = setTimeout(() => {
+        setActive((prev) => (prev + 1) % items.length);
+      }, 2500);
+    }
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
